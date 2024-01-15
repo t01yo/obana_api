@@ -1,0 +1,133 @@
+/* Reset Box Model and Body */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #77d7e8;
+    color: #333333;
+}
+
+/* Main Container */
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2em;
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #010436; /* Dark teal color */
+    margin-bottom: 1em;
+}
+
+/* Form Styles */
+form {
+    background-color: #45f1a1;
+    border: 1px solid #0a0000;
+    border-radius: 5px;
+    padding: 1.5em;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    color: #010436;
+    margin-top: 0;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #010436;
+}
+
+input,
+textarea {
+    border: 1px solid #4e0303;
+    border-radius: 5px;
+    padding: 0.5em;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Button Styles */
+.btn-submit,
+.btn-delete {
+    background-color: #010436;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-submit:hover,
+.btn-submit:focus,
+.btn-delete:hover,
+.btn-delete:focus {
+    transform: scale(1.1);
+}
+
+/* Posts Container Styles */
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.posts-container h2 {
+    text-align: center;
+    color: #010436;
+    margin-top: 0;
+    grid-column: 1/-1;
+}
+
+/* Post Card Styles */
+.post-card {
+    background-color: #45f1a1;
+    border: 1px solid #060606;
+    border-radius: 5px;
+    padding: 1em;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    margin-top: 0;
+    color: #333;
+}
+
+.post-body {
+    margin-bottom: 1em;
+    color: #555;
+}
+
+/* Delete Button Styles */
+.btn-delete {
+    position: absolute;
+    bottom: 1em;
+    left: 30%;
+    right: 30%;
+    font-size: 16px;
+}
